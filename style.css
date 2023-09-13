@@ -71,7 +71,7 @@ a:hover::after{    /*for hovoring th elist ele*/
 }
 
 
-    /* About section */
+    /* About section ****************************************/
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -85,7 +85,7 @@ a:hover::after{    /*for hovoring th elist ele*/
     flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
 }
 .about-col-2{
@@ -302,6 +302,9 @@ nav .fa-solid{   /*for hide the menue and close icon*/
     }
     .about-col-2{
         font-size: 14px;
+    }
+     .about-col-1 img{
+        width: 70%;     /*changing the main image size*/
     }
     .tab-links{
         font-size: 15px;
