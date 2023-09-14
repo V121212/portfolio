@@ -11,6 +11,47 @@ body{
     background-color: #080808; /*for dark color*/
     color: #fff; /*for white text color*/
 }
+
+/* only for animation of a single line */
+#parent {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+    color: rgba(255,255,255,.70);
+    position: relative;
+  }
+  
+  #border {
+    border-bottom: solid 3px rgba(0,255,0,.75);
+    position: absolute;
+    right: -7px;
+    width: 20px;
+  }
+  
+  /* Animation */
+  #parent {
+    animation: animated-text 2s steps(30,end) 1s 1 normal both
+  }
+  
+  #border {
+     animation: animated-cursor 600ms steps(30,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 480px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-bottom-color: rgba(0,255,0,.75);}
+    to{border-bottom-color: transparent;}
+  }
 #header{
     width: 100%;
     height: 100vh;
