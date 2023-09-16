@@ -18,6 +18,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
+                      <li><a href="#modes" onclick="dark_mode()" class="same">Theme</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -179,5 +180,12 @@ function opentab(tabname){
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+    <script>
+function dark_mode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   var aboutMe = getElementById("about") ;
+}
+</script>
 </body>
 </html>
