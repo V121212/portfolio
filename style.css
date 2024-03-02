@@ -351,6 +351,7 @@ nav .fa-solid{   /*for hide the menue and close icon*/
             
 /* change mode setting************************************* */
 .dark-mode {
-  background-color:antiquewhite;
   color: black;
+  font-weight: 900;
+  background-color:antiquewhite;
 }
