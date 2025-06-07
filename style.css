@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
@@ -8,9 +8,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #080808; /*for dark color*/
+    background-color: black; /*for dark color*/
     color: #fff; /*for white text color*/
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -32,12 +33,35 @@ nav{               /*this is after logo apply*/
 
 .logo{
     width: 140px;
+    
 }
+
+.onee{
+    margin-top: -42px;
+}
+
+
+/* .logo:hover{
+    scale: 2;
+    transition: all 1s;
+    display:block;
+    top: 50%;
+    left: 50%;
+    padding-top: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+} */
+
 nav ul li{
     display: inline-block;       /*this is for line out list items*/
     list-style: none;
     margin: 10px 20px;         /*the space from top and side*/
+     
 }
+
+
+
+
 
 nav ul li a{                    /*for d0ing list color wheit and remove the underline from thm */
     color: #fff;
@@ -71,6 +95,7 @@ a:hover::after{    /*for hovoring th elist ele*/
 }
 
 
+/* this is only for animation of my line:: */
 .container1{
     display: inline-block;
   }
@@ -79,7 +104,7 @@ a:hover::after{    /*for hovoring th elist ele*/
     border-right: .15em solid rgb(81, 55, 8);
     white-space: nowrap;
     animation: 
-    typing 1s forwards;
+    typing 4s forwards infinite;
     font-size: 1.6rem;
     width: 0;
   }
@@ -88,7 +113,13 @@ a:hover::after{    /*for hovoring th elist ele*/
     to { width: 100% }
   }
 
-    /* About section ****************************************/
+
+
+
+
+
+
+    /* About section */
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -102,7 +133,7 @@ a:hover::after{    /*for hovoring th elist ele*/
     flex-basis: 35%;
 }
 .about-col-1 img{
-    width: 80%;
+    width: 80%;    /*changing the main image size*/
     border-radius: 15px;
 }
 .about-col-2{
@@ -152,6 +183,32 @@ a:hover::after{    /*for hovoring th elist ele*/
     display: block;
 }
 
+
+/* '''''''''''''''''''''' */
+/* ul{
+    /* display: flex; */
+    /* gap: 5; */
+} */
+li span{
+    margin-top: 30px ;
+    padding: 10px 5px;
+    border: 10px solid ff004f;
+    font-size: 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: #080808;
+}
+
+
+#skiils{
+    display: flex;
+    flex-direction: row;
+    gap: 6;
+}
+
+
         /* ************services *******************/
 #services{
     padding: 30px 0;
@@ -198,6 +255,7 @@ a:hover::after{    /*for hovoring th elist ele*/
 }
 .btn:hover{
     background : #ff004f;
+    cursor: pointer;
 }
 
 /******************contact form**************/
@@ -234,6 +292,7 @@ a:hover::after{    /*for hovoring th elist ele*/
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+    cursor: pointer;
 }
 
 
@@ -255,7 +314,7 @@ form btn2{
     padding: 14px 16px;
     font-size: 18px;
     margin-top: 20px ;
-    cursor: pointer;
+    cursor:pointer ;
 }
 
 .copyright{
@@ -283,9 +342,26 @@ nav .fa-solid{   /*for hide the menue and close icon*/
         font-size: 30px;
     }
 
-  
 
-            
+
+
+    
+
+/* only for animation of a single line */
+#parent {
+    height: 35px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 15px;
+    color: rgba(255,255,255,.70);
+    position: relative;
+  }
+  
+ 
+
+
+    
     nav .fa-solid{   /*for hide the menue and close icon*/
         display: block;
         font-size: 25px;
@@ -324,8 +400,8 @@ nav .fa-solid{   /*for hide the menue and close icon*/
     .about-col-2{
         font-size: 14px;
     }
-     .about-col-1 img{
-        width: 70%;     /*changing the main image size*/
+    .about-col-1 img{
+        width: 70%;    /*changing the main image size*/
     }
     .tab-links{
         font-size: 15px;
@@ -348,10 +424,75 @@ nav .fa-solid{   /*for hide the menue and close icon*/
     display: block;
 }
 
-            
+
 /* change mode setting************************************* */
 .dark-mode {
-  color: black;
-/*   font-weight: 900; */
-  background-color:antiquewhite;
+    color: black;
+  background-color:#fff;
+  nav ul li a{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+  }
+  #about{
+    color: black;
+    font-weight: bold;
+   }
+   .sub-title{       
+    color: black;
+    }
+    .services-list div{
+        color: black;
+    }
+    .services-list div:hover{
+        background: black;
+        color: #fff;
+        transform: translateY(-10px); 
+     }
+     form input,form textarea{
+        background: black;
+        color: #fff;
+    }
+    .social-icons a:hover{
+        color: black;
+     }
+     .btn{
+        background : #ff004f; 
+     }
+     .copyright{
+        background: black;
+        color: #fff;
+    }
+    .logo:hover{
+        scale: 2;
+        transition: all 1s;
+        /* transform: rotateY(360deg); */
+    
+            /* position:relative;   */
+     
+            /* position:absolute;  */
+            /* display:none;  */
+            /* z-index:99; */
+            /* left:50%; */
+            /* -webkit-transform: translateX(+50%);
+            
+            -ms-transform: translateX(+50%);
+            -ms-transform: translateY(+50%);
+            transform: translateX(+50%);
+            transform: translateY(+50%); */
+
+           
+            display:block;
+            top: 50%;
+            left: 50%;
+            padding-top: 5px;
+            margin-top: 50px;
+            margin-left: 50px;
+           
+        
+            /* display:block; */
+      
 }
+}
+
+
