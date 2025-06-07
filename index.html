@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="v121212" content="portfolio,MainPortfolio">
-    <meta name="@vishal@verma11" content="info">
-    <title>My Portfolio</title>
+    <title>Vishal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/vv-logo-design_731343-344.jpg?w=2000">
     <script src="https://kit.fontawesome.com/2babab8003.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,21 +13,23 @@
         <div class="container">
             <nav>
                 <img src="mtImgCircle.png"  class="logo"  > <!-- for logo at the header -->
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>  <!--by this a href our list be clickable-->
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                      <li><a href="#modes" onclick="dark_mode()" class="same">Theme</a></li>
+                <ul id="sidemenu"> 
+                    <li><a href="#header" class="same">Home</a></li>  <!--by this a href our list be clickable-->
+                    <li><a href="#about" class="same">About</a></li>
+                    <li><a href="#services" class="same">Services</a></li>
+                    <li><a href="#contact" class="same">Contact</a></li>
+                    <li><a href="#modes" onclick="dark_mode()" class="same">Theme</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Programmer</p>
-                <h3>Hi,I'm <span>Vishal</span> Verma , B.Tech Student</h3>
-                 <div class="container1">
-                    <div class="typed-out">Web Developer & Programmer </div></div>
+                <h3>Hi ,I'm <span>Vishal</span> Verma</h3>
+                <!-- <h4>A <span class="type" class="border" class="line-1 anim-typewriter">Web Developer & Programmer</span></h4> -->
+                <!-- <class="line-1 anim-typewriter">A Web Developer & Programmer</class> -->
+                <div class="container1">
+                    <div class="typed-out">  Web Developer & Programmer  </div></div>
             </div>
             </div>
         </div>
@@ -41,10 +42,13 @@
                 <img src="avatar1.png" >
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
+                <h1 class="sub-title" id="about">About Me</h1>
                 <p>
-                     Hii! I am Vishal Verma pursuing my B.TECH degree in Computer Science. I am a dedicated, hardworking, and proactive coder with knowledge about Competitive Programming, Web Development and Team Management. I am currently looking for an opportunity to utilize my technical skills in a challenging working environment and become a valuable asset to the organization that I work for.
-                </p>
+                  Hi! I’m Vishal Verma, a Computer Science graduate with a B.Tech degree. I’m a dedicated, hardworking, and proactive coder with a strong foundation in programming, web development, and team management.
+                  <br>
+                  As a MERN stack developer, I specialize in building responsive, scalable, and user-friendly websites. My expertise spans both front-end and back-end technologies, allowing me to deliver complete web solutions—from sleek user interfaces to robust server-side systems.
+                  In addition to web development, I have experience with various programming languages, enabling me to develop and provide custom software tailored to specific client needs. I’m actively seeking opportunities where I can apply my skills in a challenging environment and contribute meaningfully to innovative projects.
+                 </p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>        <!-- <p class="tab-links">Certifications</p> -->
@@ -52,34 +56,35 @@
                     <p class="tab-links" onclick="opentab('intenships')">Intenships</p>
                     <p class="tab-links" onclick="opentab('languages')">Languages</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents active-tab onee" id="skills">
                     <ul>
                         <li><span>Web Developer</span></li>
-                        <li><span>React JS</span></li>
-                        <li><span>Node Js & Express</span></li>
+                        <li><span>Programmer</span></li>
+                        <li><span>Team Management</span></li>
                         <li><span>Quick Learner</span></li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <div class="tab-contents onee" id="education">
                     <ul>
-                        <li><span>Persuing B.Tech from LNCTE</span></li>
+                        <li><span>B.Tech from LNCTE</span></li>
                         <li><span>9th-12th from YugDharma Public School </span></li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="intenships">
+                <div class="tab-contents onee" id="intenships">
                     <ul>
-                        <li><span>AICTE virtual Intenship Web Development</span></li>
-                        <li><span>AICTE virtual Intenship Cyber Security</span></li>
-                        <li><span>InfoByte Intenship in Web Development & Designing</span></li>
+                        <li><span>MERN stack intern at SkillGenic Indore</span></li>
+                        <li><span>AICTE virtual Intenship</span></li>
+                        <li><span>Motion Cut Intenship</span></li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="languages">
+                <div class="tab-contents onee" id="languages">
                     <ul>
                         <li><span>Knowledge about C</span></li>
                         <li><span>Working on C++</span></li>
-                        <li><span>Learning JAVA</span></li>
+                        <li><span>JAVA SE</span></li>
+                        <li><span>React Js, Express Js & Node Js</span></li>
                         <li><span>HTML,CSS and JAVASCIPT</span></li>
-                        <li><span>My SQL</span></li>
+                        <li><span>MySql & MongoDB</span></li>
                     </ul>
                 </div>
             </div>
@@ -94,16 +99,16 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-globe"></i>
-                <h2>Frontend Developer</h2>
-                <p>I am a Frontend Developer and I have knowledge about HTML,CSS,JAVASCIPT and REACT , so I am always searching for an opportunity that increases my Knowledge </p>
+                <h2>MERN Developer</h2>
+                <p>"As a MERN stack developer, I specialize in building responsive and scalable websites with ease, leveraging both front-end and back-end technologies. My expertise spans the full development lifecycle, from creating dynamic user interfaces with React to developing robust server-side logic using Node.js and Express, and managing databases with MongoDB." </p>
             </div>
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Programmer</h2>
-                <p>I have knowledge about some Programming languages and that help me to make Software and I also provide Software</p>
+                <p>"In addition to my MERN stack expertise, I have a solid understanding of various programming languages, which enables me to develop custom software solutions. I not only build websites but also provide tailored software based on client needs."</p>
             </div>
         </div>
-        <button class="btn">Show More</button>
+        <button class="btn show-more" onclick="showMoreFunction()">Show More</button>
     </div>
 </div>
 
@@ -120,8 +125,11 @@
                     <a href="https://www.instagram.com/vishalverma379/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/V121212"><i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/VishalV37462998"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://leetcode.com/u/vishver/" target="_blank" title="LeetCode">
+                      <i class="fa-solid fa-code"></i>
+                    </a>  
                 </div>
-                <a href="Vishal'sResume .pdf" download class="btn btn2">Download Resume</a>
+                <a href="My_resume_Copy.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">       <!--form that submit to google sheet-->
@@ -135,60 +143,9 @@
         </div>
     </div>
     <div class="copyright">
-        <p> &copy; Vishal Verma. All rights reserved </p>
+        <p>&copy; Vishal Verma. All rights reserved - Made in 2023</p>
     </div>
  </div>
-
-<!-- <script src="script.js"></script> -->
-<script>
-    // about section:
-    var tablinks= document.getElementsByClassName("tab-links");
-     var tabcontents= document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-     for(tablink of tablinks){
-        tablink.classList.remove("active-link")   //for hiding info
-     }
-     for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-     }
-     event.currentTarget.classList.add("active-link");   //for shows the info
-     document.getElementById(tabname).classList.add("active-tab");
-}
-</script>
-<script>
-    var sidemeu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpU2gaP1CYUjO9T4uiT0_PPw2uqIzZ5kLIaq-KyGanNt-KodoC2rOab8St8fE4uIASyg/exec'    /*gogle sheet link after generaed*/ 
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");  /*this is for message i.e after runs 5s it automatically dusappear and reaset*/
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-    <script>
-function dark_mode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-   var aboutMe = getElementById("about") ;
-}
-</script>
+<script src="index.js"></script>
 </body>
 </html>
